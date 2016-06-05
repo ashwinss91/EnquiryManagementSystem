@@ -67,6 +67,5 @@ C:\Users\ashwin.sriram\Documents\GitHub\EnquiryManagementSystem\EnquiryManagemen
 C:\Users\ashwin.sriram\Documents\GitHub\EnquiryManagementSystem\EnquiryManagementSystem\bin\System.Web.WebPages.Deployment.xml
 C:\Users\ashwin.sriram\Documents\GitHub\EnquiryManagementSystem\EnquiryManagementSystem\bin\System.Web.WebPages.Razor.xml
 C:\Users\ashwin.sriram\Documents\GitHub\EnquiryManagementSystem\EnquiryManagementSystem\bin\Antlr3.Runtime.pdb
-C:\Users\ashwin.sriram\Documents\GitHub\EnquiryManagementSystem\EnquiryManagementSystem\obj\Debug\EnquiryManagementSystem.csprojResolveAssemblyReference.cache
 C:\Users\ashwin.sriram\Documents\GitHub\EnquiryManagementSystem\EnquiryManagementSystem\obj\Debug\EnquiryManagementSystem.dll
 C:\Users\ashwin.sriram\Documents\GitHub\EnquiryManagementSystem\EnquiryManagementSystem\obj\Debug\EnquiryManagementSystem.pdb
