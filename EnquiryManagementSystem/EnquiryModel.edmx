@@ -4,22 +4,22 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="EnquiryModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="EnquiryModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityContainer Name="EnquiryModelStoreContainer">
-    <EntitySet Name="Leads" EntityType="EnquiryModel.Store.Leads" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="CustomerProfiles" EntityType="EnquiryModel.Store.CustomerProfiles" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="EnquiryTypes" EntityType="EnquiryModel.Store.EnquiryTypes" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="Applications" EntityType="EnquiryModel.Store.Applications" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="Events" EntityType="EnquiryModel.Store.Events" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="Advertisements" EntityType="EnquiryModel.Store.Advertisements" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="SalesTeams" EntityType="EnquiryModel.Store.SalesTeams" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="Opportunities" EntityType="EnquiryModel.Store.Opportunities" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="EnquiryRisks" EntityType="EnquiryModel.Store.EnquiryRisks" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="EnquiryStages" EntityType="EnquiryModel.Store.EnquiryStages" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="EnquiryStatus" EntityType="EnquiryModel.Store.EnquiryStatus" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="Priorities" EntityType="EnquiryModel.Store.Priorities" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="Users" EntityType="EnquiryModel.Store.Users" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="RoleTypes" EntityType="EnquiryModel.Store.RoleTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Leads" EntityType="EnquiryModel.Store.Leads" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="CustomerProfiles" EntityType="EnquiryModel.Store.CustomerProfiles" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="EnquiryTypes" EntityType="EnquiryModel.Store.EnquiryTypes" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Applications" EntityType="EnquiryModel.Store.Applications" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Events" EntityType="EnquiryModel.Store.Events" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Advertisements" EntityType="EnquiryModel.Store.Advertisements" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="SalesTeams" EntityType="EnquiryModel.Store.SalesTeams" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Opportunities" EntityType="EnquiryModel.Store.Opportunities" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="EnquiryRisks" EntityType="EnquiryModel.Store.EnquiryRisks" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="EnquiryStages" EntityType="EnquiryModel.Store.EnquiryStages" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="EnquiryStatus" EntityType="EnquiryModel.Store.EnquiryStatus" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Priorities" EntityType="EnquiryModel.Store.Priorities" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="Users" EntityType="EnquiryModel.Store.Users" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="RoleTypes" EntityType="EnquiryModel.Store.RoleTypes" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
     <AssociationSet Name="LeadOpportunity" Association="EnquiryModel.Store.LeadOpportunity">
       <End Role="Lead" EntitySet="Leads" />
       <End Role="Opportunity" EntitySet="Opportunities" />
@@ -374,8 +374,8 @@
 </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EnquiryModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
-        <EntityContainer Name="EnquiryModelContainer" annotation:LazyLoadingEnabled="true">
+      <Schema Namespace="EnquiryModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="EnquiryModelContainer" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
           <EntitySet Name="Leads" EntityType="EnquiryModel.Lead" />
           <EntitySet Name="CustomerProfiles" EntityType="EnquiryModel.CustomerProfile" />
           <EntitySet Name="EnquiryTypes" EntityType="EnquiryModel.EnquiryType" />
@@ -447,7 +447,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="CustomerName" Type="String" Nullable="false" />
           <Property Name="FirmName" Type="String" Nullable="false" />
           <Property Name="ContactNo" Type="String" Nullable="false" />
@@ -484,7 +484,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Name" Type="String" Nullable="false" />
           <NavigationProperty Name="Leads" Relationship="EnquiryModel.CustomerProfileLead" FromRole="CustomerProfile" ToRole="Lead" />
         </EntityType>
@@ -492,7 +492,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Name" Type="String" Nullable="false" />
           <NavigationProperty Name="Leads" Relationship="EnquiryModel.EnquiryTypeLead" FromRole="EnquiryType" ToRole="Lead" />
         </EntityType>
@@ -500,7 +500,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Name" Type="String" Nullable="false" />
           <NavigationProperty Name="Leads" Relationship="EnquiryModel.ApplicationLead" FromRole="Application" ToRole="Lead" />
         </EntityType>
@@ -508,7 +508,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="EventDate" Type="String" Nullable="false" />
           <Property Name="EventLocation" Type="String" Nullable="false" />
@@ -518,7 +518,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Name" Type="String" Nullable="false" />
           <NavigationProperty Name="Leads" Relationship="EnquiryModel.AdvertisementLead" FromRole="Advertisement" ToRole="Lead" />
         </EntityType>
@@ -526,7 +526,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="Region" Type="String" Nullable="false" />
           <Property Name="Manager" Type="String" Nullable="false" />
@@ -537,7 +537,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Potentials" Type="String" Nullable="false" />
           <Property Name="Probability" Type="String" Nullable="false" />
           <Property Name="ExpectedClosedDate" Type="String" Nullable="false" />
@@ -564,7 +564,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Name" Type="String" Nullable="false" />
           <NavigationProperty Name="Opportunities" Relationship="EnquiryModel.EnquiryRiskOpportunity" FromRole="EnquiryRisk" ToRole="Opportunity" />
         </EntityType>
@@ -572,7 +572,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Name" Type="String" Nullable="false" />
           <NavigationProperty Name="Opportunities" Relationship="EnquiryModel.EnquiryStageOpportunity" FromRole="EnquiryStage" ToRole="Opportunity" />
         </EntityType>
@@ -580,7 +580,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Name" Type="String" Nullable="false" />
           <NavigationProperty Name="Opportunities" Relationship="EnquiryModel.EnquiryStatuOpportunity" FromRole="EnquiryStatu" ToRole="Opportunity" />
         </EntityType>
@@ -588,7 +588,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Name" Type="String" Nullable="false" />
           <NavigationProperty Name="Opportunities" Relationship="EnquiryModel.PriorityOpportunity" FromRole="Priority" ToRole="Opportunity" />
         </EntityType>
@@ -596,7 +596,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="RoleTypeId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Leads" Relationship="EnquiryModel.UserLead" FromRole="User" ToRole="Lead" />
@@ -606,7 +606,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Name" Type="String" Nullable="false" />
           <NavigationProperty Name="Users" Relationship="EnquiryModel.RoleTypeUser" FromRole="RoleType" ToRole="User" />
         </EntityType>
@@ -959,14 +959,14 @@
 </Mapping></edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
-  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <edmx:Designer>
     <edmx:Connection>
-      <DesignerInfoPropertySet>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
         <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
       </DesignerInfoPropertySet>
     </edmx:Connection>
     <edmx:Options>
-      <DesignerInfoPropertySet>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="True" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />

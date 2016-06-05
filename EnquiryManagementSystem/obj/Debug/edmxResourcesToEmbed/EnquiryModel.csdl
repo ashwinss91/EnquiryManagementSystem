@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EnquiryModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
-  <EntityContainer Name="EnquiryModelContainer" annotation:LazyLoadingEnabled="true">
+<Schema Namespace="EnquiryModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="EnquiryModelContainer" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
     <EntitySet Name="Leads" EntityType="EnquiryModel.Lead" />
     <EntitySet Name="CustomerProfiles" EntityType="EnquiryModel.CustomerProfile" />
     <EntitySet Name="EnquiryTypes" EntityType="EnquiryModel.EnquiryType" />
@@ -72,7 +72,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="CustomerName" Type="String" Nullable="false" />
     <Property Name="FirmName" Type="String" Nullable="false" />
     <Property Name="ContactNo" Type="String" Nullable="false" />
@@ -109,7 +109,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Name" Type="String" Nullable="false" />
     <NavigationProperty Name="Leads" Relationship="EnquiryModel.CustomerProfileLead" FromRole="CustomerProfile" ToRole="Lead" />
   </EntityType>
@@ -117,7 +117,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Name" Type="String" Nullable="false" />
     <NavigationProperty Name="Leads" Relationship="EnquiryModel.EnquiryTypeLead" FromRole="EnquiryType" ToRole="Lead" />
   </EntityType>
@@ -125,7 +125,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Name" Type="String" Nullable="false" />
     <NavigationProperty Name="Leads" Relationship="EnquiryModel.ApplicationLead" FromRole="Application" ToRole="Lead" />
   </EntityType>
@@ -133,7 +133,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Name" Type="String" Nullable="false" />
     <Property Name="EventDate" Type="String" Nullable="false" />
     <Property Name="EventLocation" Type="String" Nullable="false" />
@@ -143,7 +143,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Name" Type="String" Nullable="false" />
     <NavigationProperty Name="Leads" Relationship="EnquiryModel.AdvertisementLead" FromRole="Advertisement" ToRole="Lead" />
   </EntityType>
@@ -151,7 +151,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Name" Type="String" Nullable="false" />
     <Property Name="Region" Type="String" Nullable="false" />
     <Property Name="Manager" Type="String" Nullable="false" />
@@ -162,7 +162,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Potentials" Type="String" Nullable="false" />
     <Property Name="Probability" Type="String" Nullable="false" />
     <Property Name="ExpectedClosedDate" Type="String" Nullable="false" />
@@ -189,7 +189,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Name" Type="String" Nullable="false" />
     <NavigationProperty Name="Opportunities" Relationship="EnquiryModel.EnquiryRiskOpportunity" FromRole="EnquiryRisk" ToRole="Opportunity" />
   </EntityType>
@@ -197,7 +197,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Name" Type="String" Nullable="false" />
     <NavigationProperty Name="Opportunities" Relationship="EnquiryModel.EnquiryStageOpportunity" FromRole="EnquiryStage" ToRole="Opportunity" />
   </EntityType>
@@ -205,7 +205,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Name" Type="String" Nullable="false" />
     <NavigationProperty Name="Opportunities" Relationship="EnquiryModel.EnquiryStatuOpportunity" FromRole="EnquiryStatu" ToRole="Opportunity" />
   </EntityType>
@@ -213,7 +213,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Name" Type="String" Nullable="false" />
     <NavigationProperty Name="Opportunities" Relationship="EnquiryModel.PriorityOpportunity" FromRole="Priority" ToRole="Opportunity" />
   </EntityType>
@@ -221,7 +221,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Name" Type="String" Nullable="false" />
     <Property Name="RoleTypeId" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Leads" Relationship="EnquiryModel.UserLead" FromRole="User" ToRole="Lead" />
@@ -231,7 +231,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
     <Property Name="Name" Type="String" Nullable="false" />
     <NavigationProperty Name="Users" Relationship="EnquiryModel.RoleTypeUser" FromRole="RoleType" ToRole="User" />
   </EntityType>

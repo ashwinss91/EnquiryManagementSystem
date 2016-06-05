@@ -1,6 +1,168 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
-  <Alias Key="Model" Value="EnquiryModel" />
-  <Alias Key="Target" Value="EnquiryModel.Store" />
-  <EntityContainerMapping CdmEntityContainer="EnquiryModelContainer" StorageEntityContainer="EnquiryModelTargetContainer" />
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EnquiryModelStoreContainer" CdmEntityContainer="EnquiryModelContainer">
+    <EntitySetMapping Name="Leads">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.Lead)">
+        <MappingFragment StoreEntitySet="Leads">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="FirmName" ColumnName="FirmName" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="EnquiryDate" ColumnName="EnquiryDate" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="EnquiryTypeId" ColumnName="EnquiryTypeId" />
+          <ScalarProperty Name="CustomerProfileId" ColumnName="CustomerProfileId" />
+          <ScalarProperty Name="SalesTeamId" ColumnName="SalesTeamId" />
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="AdvertisementId" ColumnName="AdvertisementId" />
+          <ScalarProperty Name="IsUrgent" ColumnName="IsUrgent" />
+          <ScalarProperty Name="IsQualify" ColumnName="IsQualify" />
+          <ScalarProperty Name="IsDisQualify" ColumnName="IsDisQualify" />
+          <ScalarProperty Name="IsDeactivate" ColumnName="IsDeactivate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerProfiles">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.CustomerProfile)">
+        <MappingFragment StoreEntitySet="CustomerProfiles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnquiryTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.EnquiryType)">
+        <MappingFragment StoreEntitySet="EnquiryTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Applications">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.Application)">
+        <MappingFragment StoreEntitySet="Applications">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.Event)">
+        <MappingFragment StoreEntitySet="Events">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EventDate" ColumnName="EventDate" />
+          <ScalarProperty Name="EventLocation" ColumnName="EventLocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Advertisements">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.Advertisement)">
+        <MappingFragment StoreEntitySet="Advertisements">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalesTeams">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.SalesTeam)">
+        <MappingFragment StoreEntitySet="SalesTeams">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Opportunities">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.Opportunity)">
+        <MappingFragment StoreEntitySet="Opportunities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Potentials" ColumnName="Potentials" />
+          <ScalarProperty Name="Probability" ColumnName="Probability" />
+          <ScalarProperty Name="ExpectedClosedDate" ColumnName="ExpectedClosedDate" />
+          <ScalarProperty Name="RemainderDate" ColumnName="RemainderDate" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsMarkComplete" ColumnName="IsMarkComplete" />
+          <ScalarProperty Name="IsCRMUpdated" ColumnName="IsCRMUpdated" />
+          <ScalarProperty Name="IsFlag" ColumnName="IsFlag" />
+          <ScalarProperty Name="EnquiryStageId" ColumnName="EnquiryStageId" />
+          <ScalarProperty Name="PriorityId" ColumnName="PriorityId" />
+          <ScalarProperty Name="EnquiryStatuId" ColumnName="EnquiryStatuId" />
+          <ScalarProperty Name="EnquiryRiskId" ColumnName="EnquiryRiskId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnquiryRisks">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.EnquiryRisk)">
+        <MappingFragment StoreEntitySet="EnquiryRisks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnquiryStages">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.EnquiryStage)">
+        <MappingFragment StoreEntitySet="EnquiryStages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnquiryStatus">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.EnquiryStatu)">
+        <MappingFragment StoreEntitySet="EnquiryStatus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Priorities">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.Priority)">
+        <MappingFragment StoreEntitySet="Priorities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.User)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RoleTypeId" ColumnName="RoleTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(EnquiryModel.RoleType)">
+        <MappingFragment StoreEntitySet="RoleTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="LeadOpportunity" TypeName="EnquiryModel.LeadOpportunity" StoreEntitySet="Leads">
+      <EndProperty Name="Opportunity">
+        <ScalarProperty Name="Id" ColumnName="Opportunity_Id" />
+      </EndProperty>
+      <EndProperty Name="Lead">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
 </Mapping>
