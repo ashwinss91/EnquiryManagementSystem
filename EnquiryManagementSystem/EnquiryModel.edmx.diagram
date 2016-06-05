@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="73780f97e62f489b94ec808dfdc03949" Name="Diagram1" ZoomLevel="93" >
+        <EntityTypeShape EntityType="EnquiryModel.Lead" Width="1.5" PointX="5.25" PointY="1.125" />
+        <EntityTypeShape EntityType="EnquiryModel.CustomerProfile" Width="1.5" PointX="2.5" PointY="3.375" />
+        <EntityTypeShape EntityType="EnquiryModel.EnquiryType" Width="1.5" PointX="2.75" PointY="5.375" />
+        <EntityTypeShape EntityType="EnquiryModel.Application" Width="1.5" PointX="2.625" PointY="7.25" />
+        <EntityTypeShape EntityType="EnquiryModel.Event" Width="1.5" PointX="3" PointY="9.75" />
+        <EntityTypeShape EntityType="EnquiryModel.Advertisement" Width="1.5" PointX="4.75" PointY="10.25" />
+        <EntityTypeShape EntityType="EnquiryModel.SalesTeam" Width="1.5" PointX="6.75" PointY="8.875" />
+        <EntityTypeShape EntityType="EnquiryModel.Opportunity" Width="1.5" PointX="7.5" PointY="2" />
+        <EntityTypeShape EntityType="EnquiryModel.EnquiryRisk" Width="1.5" PointX="10.375" PointY="4.75" />
+        <EntityTypeShape EntityType="EnquiryModel.EnquiryStage" Width="1.5" PointX="9.375" PointY="0.5" />
+        <EntityTypeShape EntityType="EnquiryModel.EnquiryStatu" Width="1.5" PointX="10.375" PointY="2.75" />
+        <EntityTypeShape EntityType="EnquiryModel.Priority" Width="1.5" PointX="10.125" PointY="7.375" />
+        <EntityTypeShape EntityType="EnquiryModel.User" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="EnquiryModel.RoleType" Width="1.5" PointX="0.625" PointY="2.875" />
+        <AssociationConnector Association="EnquiryModel.LeadOpportunity" />
+        <AssociationConnector Association="EnquiryModel.EnquiryTypeLead" />
+        <AssociationConnector Association="EnquiryModel.CustomerProfileLead" />
+        <AssociationConnector Association="EnquiryModel.SalesTeamLead" />
+        <AssociationConnector Association="EnquiryModel.EventLead" />
+        <AssociationConnector Association="EnquiryModel.ApplicationLead" />
+        <AssociationConnector Association="EnquiryModel.UserLead" />
+        <AssociationConnector Association="EnquiryModel.EnquiryRiskOpportunity" />
+        <AssociationConnector Association="EnquiryModel.EnquiryStageOpportunity" />
+        <AssociationConnector Association="EnquiryModel.EnquiryStatuOpportunity" />
+        <AssociationConnector Association="EnquiryModel.PriorityOpportunity" />
+        <AssociationConnector Association="EnquiryModel.RoleTypeUser" />
+        <AssociationConnector Association="EnquiryModel.AdvertisementLead" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
