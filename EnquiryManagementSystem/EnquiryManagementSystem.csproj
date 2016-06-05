@@ -123,6 +123,12 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advertisement.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Application.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -157,20 +163,88 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="CustomerProfile.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EnquiryModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnquiryModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EnquiryModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="EnquiryModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EnquiryModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="EnquiryRisk.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EnquiryStage.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EnquiryStatu.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EnquiryType.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Event.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IsCRMUpdated.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IsDeactivate.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IsDisQualify.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IsFlag.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IsMarkComplete.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IsQualify.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IsUrgent.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Lead.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Opportunity.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Priority.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleType.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SalesTeam.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>EnquiryModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="EnquiryModel.edmx.sql" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -200,6 +274,16 @@
       <LastGenOutput>EnquiryModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <Content Include="EnquiryModel.edmx.diagram">
+      <DependentUpon>EnquiryModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="EnquiryModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EnquiryModel.Context.cs</LastGenOutput>
+      <DependentUpon>EnquiryModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="EnquiryModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EnquiryModel.cs</LastGenOutput>
       <DependentUpon>EnquiryModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
