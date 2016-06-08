@@ -13,7 +13,6 @@ namespace EnquiryManagementSystem.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            var identity = this.User.Identity;
             return new string[] { "value1", "value2" };
         }
 
