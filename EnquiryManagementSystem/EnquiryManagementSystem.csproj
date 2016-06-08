@@ -164,6 +164,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LeadsController.cs" />
+    <Compile Include="Controllers\OpportunitiesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="CustomerProfile.cs">
       <DependentUpon>EnquiryModel.tt</DependentUpon>
@@ -310,6 +312,16 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Leads\Create.cshtml" />
+    <Content Include="Views\Leads\Delete.cshtml" />
+    <Content Include="Views\Leads\Details.cshtml" />
+    <Content Include="Views\Leads\Edit.cshtml" />
+    <Content Include="Views\Leads\Index.cshtml" />
+    <Content Include="Views\Opportunities\Create.cshtml" />
+    <Content Include="Views\Opportunities\Delete.cshtml" />
+    <Content Include="Views\Opportunities\Details.cshtml" />
+    <Content Include="Views\Opportunities\Edit.cshtml" />
+    <Content Include="Views\Opportunities\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
