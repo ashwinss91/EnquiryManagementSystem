@@ -122,7 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Advertisement.cs">
@@ -225,6 +224,21 @@
     <Compile Include="Lead.cs">
       <DependentUpon>EnquiryModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Enquiries\Advertisement.cs" />
+    <Compile Include="Models\Enquiries\Application.cs" />
+    <Compile Include="Models\Enquiries\CustomerProfile.cs" />
+    <Compile Include="Models\Enquiries\EnquiryContext.cs" />
+    <Compile Include="Models\Enquiries\EnquiryRisk.cs" />
+    <Compile Include="Models\Enquiries\EnquiryStage.cs" />
+    <Compile Include="Models\Enquiries\EnquiryStatu.cs" />
+    <Compile Include="Models\Enquiries\EnquiryType.cs" />
+    <Compile Include="Models\Enquiries\Event.cs" />
+    <Compile Include="Models\Enquiries\Lead.cs" />
+    <Compile Include="Models\Enquiries\Opportunity.cs" />
+    <Compile Include="Models\Enquiries\Priority.cs" />
+    <Compile Include="Models\Enquiries\RoleType.cs" />
+    <Compile Include="Models\Enquiries\SalesTeam.cs" />
+    <Compile Include="Models\Enquiries\User.cs" />
     <Compile Include="Opportunity.cs">
       <DependentUpon>EnquiryModel.tt</DependentUpon>
     </Compile>
