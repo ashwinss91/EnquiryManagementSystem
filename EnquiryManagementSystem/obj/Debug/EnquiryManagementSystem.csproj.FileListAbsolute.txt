@@ -105,4 +105,3 @@ C:\Users\admash\Documents\GitHub\EnquiryManagementSystem\EnquiryManagementSystem
 C:\Users\admash\Documents\GitHub\EnquiryManagementSystem\EnquiryManagementSystem\obj\Debug\EnquiryManagementSystem.dll
 C:\Users\admash\Documents\GitHub\EnquiryManagementSystem\EnquiryManagementSystem\obj\Debug\EnquiryManagementSystem.pdb
 C:\Users\admash\Documents\GitHub\EnquiryManagementSystem\EnquiryManagementSystem\obj\Debug\EnquiryManagementSystem.csprojResolveAssemblyReference.cache
-C:\Users\ashwin.sriram\Documents\GitHub\EnquiryManagementSystem\EnquiryManagementSystem\obj\Debug\EnquiryManagementSystem.csprojResolveAssemblyReference.cache
